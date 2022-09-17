@@ -17,4 +17,3 @@ def img(prompt, steps=50):
     result = pipeImg(prompt, num_inference_steps=steps) #, height=512, width=512, num_inference_steps=60)
     result.images[0].save(prompt + "_" + str(steps) + ".png")
 
-
